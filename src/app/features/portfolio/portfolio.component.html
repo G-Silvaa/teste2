@@ -1,0 +1,110 @@
+<div class="container">
+  <div class="container-inner">
+    <div class="container-text">
+      <h1 class="welcome">Bem vindo.</h1>
+      <p class="intro">
+        Meu nome é Genilton, sou desenvolvedor há mais de 2 anos. Tenho
+        expertise em integrar requisitos tanto dos usuários quanto do negócio em
+        soluções escaláveis, duradouras, seguras e acessíveis em termos de
+        custo. Minhas principais tecnologias incluem Angular.
+      </p>
+    </div>
+    <img class="notebook" src="/hero_setup.jpg" alt="" />
+  </div>
+</div>
+<img class="border-path" src="/lado.svg" alt="" />
+
+<div class="projects" *ngIf="isvisible">
+  <div class="projects-text">
+    <h2>Meus trabalhos</h2>
+    <p>Uma coleção de projetos em que trabalhei.</p>
+  </div>
+</div>
+
+<div class="projects" *ngIf="!isvisible">
+  <div class="projects-text">
+    <h2>Minhas Stacks</h2>
+    <p>Tenho experiência com diversas tecnologias e ferramentas.</p>
+  </div>
+</div>
+
+<div class="card-xp" *ngIf="!isvisible">
+  <div class="itens">
+    <h3>Tecnologias e Ferramentas</h3>
+
+    <div class="main-skills">
+      <h4>Frontend</h4>
+      <div class="container-skills">
+      <div class="skills" *ngFor="let skill of skills">
+        <div class="back-img" [ngStyle]="{'--bg-color': skill.color}">
+          <img class="icons" [src]="skill.icon" />
+        </div>
+        <p>{{ skill.name }}</p>
+      </div>
+    </div>
+
+    </div>
+    <div class="main-skills devops">
+      <h4>Devops</h4>
+      <div class="container-skills">
+      <div class="skills" *ngFor="let skill of devops">
+        <div class="back-img" [ngStyle]="{'--bg-color': skill.color}">
+          <img class="icons" [src]="skill.icon" />
+        </div>
+        <p>{{ skill.name }}</p>
+      </div>
+    </div>
+
+    </div>
+    <div class="main-skills testes">
+      <h4>Testes</h4>
+      <div class="container-skills">
+      <div class="skills" *ngFor="let skill of teste">
+        <div class="back-img" [ngStyle]="{'--bg-color': skill.color}">
+          <img class="icons" [src]="skill.icon" />
+        </div>
+        <p>{{ skill.name }}</p>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+</div>
+<div class="project-cards" *ngIf="isvisible">
+  <div class="cards" *ngFor="let item of list">
+    <div class="cards-wrap">
+      <div class="photo" (click)="openImageModal(item.image)">
+        <img [src]="item.image" alt="" />
+      </div>
+      <div class="container-text-card">
+        <div class="container-t">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+          <a [href]="item.url" target="_blank">
+          <img class="globo" [src]="item.icon" alt="" />
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="toggle">
+  <div class="toggle-container" (click)="toggleVisibility()">
+    <div class="toggle-button" [class.active]="!isvisible"></div>
+    <span class="toggle-text left" [class.active]="isvisible"
+      >Experiências</span
+    >
+    <span class="toggle-text right" [class.active]="!isvisible"
+      >Software Skills</span
+    >
+  </div>
+</div>
+
+<footer>
+  <img class="down" src="/border-down.svg" alt="" />
+  <div class="text-footer">
+    <h3>© GeniltonSilva</h3>
+    <img src="/github.svg" alt="" />
+  </div>
+</footer>
