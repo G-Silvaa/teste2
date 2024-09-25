@@ -111,7 +111,7 @@
 .project-cards{
   width: 100%;
     height: auto;
-    padding: 0px 236px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -413,6 +413,40 @@ margin-top: 40px;
     padding: 0 46px !important;
   }
 }
+
+@media(min-width: 1615px){
+ 
+
+  .project-cards{
+    padding: 0px 236px !important;
+  }
+
+
+}
+
+@media(max-width: 376px){
+ .container{
+  height: 96% !important;
+ }
+ .projects-text{
+  h2{
+    font-size: 2rem !important;
+  }
+ }
+ .itens{
+  padding: 10px !important;
+  h3{
+    font-size: 16px !important;
+  }
+ 
+ }
+
+ .container-skills{
+  gap: 4px !important;
+ }
+
+  }
+
 
 
 

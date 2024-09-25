@@ -23,7 +23,7 @@ export class PortfolioComponent {
       title: 'Projeto Avisos',
       description: 'O projeto de avisos para o campus IFCE foi desenvolvido para exibir avisos em tempo real nos monitores do campus. A ideia era permitir a atualização em tempo real dos avisos, garantindo que as informações fossem sempre atuais e relevantes para os alunos e funcionários. Atuei no desenvolvimento do frontend usando Angular, assegurando a interatividade e a atualização dinâmica dos avisos.',
       image: '/avisos.PNG',
-      icon: '/assets/globo.svg',
+      icon: '/globo.svg',
       url: 'https://avisos-h.maracanau.ifce.edu.br/login?returnUrl=%2F'
     },
   
