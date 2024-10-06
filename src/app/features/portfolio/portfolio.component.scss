@@ -1,56 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); 
-
-.container{
+.container {
   width: 100%;
   height: 88%;
   min-height: 88vh;
   background: rgb(10, 0, 27);
 
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
   padding: 2rem 1rem;
   margin-bottom: -2px;
   position: relative;
 
-  .border-path{
+  .border-path {
     position: absolute;
     bottom: 0;
   }
 
-  .notebook{
-    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 66%);
-    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 66%);
+  .notebook {
+    mask-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0) 66%
+    );
+    -webkit-mask-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0) 66%
+    );
     width: 100%;
     height: auto;
   }
 
-  .container-text{
+  .container-text {
     width: 100%;
     height: 58%;
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
-   
 
     .welcome {
-      font-family: 'Montserrat', sans-serif; 
+      font-family: "Montserrat", sans-serif;
       font-size: 100px;
-      font-weight: 500; 
+      font-weight: 500;
       color: #fff;
-      letter-spacing: 0.05em; 
-     
+      letter-spacing: 0.05em;
+
       margin: 0;
       line-height: 1.2;
       padding-bottom: 20px;
       margin-top: 82px;
     }
 
-
-
-    p{
+    p {
       font-size: 17px;
       color: white;
       font-family: "Montserrat", sans-serif;
@@ -59,7 +63,7 @@
     }
   }
 
-  .container-inner{
+  .container-inner {
     width: 100%;
     max-width: calc(1280px + 2rem);
     padding: 1rem;
@@ -73,52 +77,48 @@
   }
 }
 
-.projects{
+.projects {
   display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+
+  .projects-text {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 1rem;
+    height: 100%;
+    gap: 1rem;
 
-    .projects-text{
-      width: 100%;
-      max-width: 1200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      gap: 1rem;
-
-      h2{
-        font-size: 3rem;
-    line-height: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    
-      }
-      P{
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-      }
-
+    h2 {
+      font-size: 3rem;
+      line-height: 1;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
     }
+    P {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+  }
 }
 
-
-.project-cards{
+.project-cards {
   width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 38px;
-    
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 38px;
 
-  .cards{
+  .cards {
     width: 374px;
     height: 500px;
     display: flex;
@@ -126,68 +126,64 @@
     justify-content: center;
     border-radius: 22px;
     background: white;
-
   }
-  .cards-wrap{
+  .cards-wrap {
     width: 326px;
     height: 465px;
     position: relative;
-    
 
-    .photo{
-width: 100%;
-height: 170px;
+    .photo {
+      width: 100%;
+      height: 170px;
 
+      img {
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        border-radius: 14px;
 
-img{
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-  border-radius: 14px;
-  
-  
- 
-
-  &:hover{
-    transform: scale(1.06);
-  }
-
-}
+        &:hover {
+          transform: scale(1.06);
+        }
+      }
     }
-    .container-text-card{
-      
+    .container-text-card {
       .container-t {
-           position: absolute;
-    display: flex;
-    flex-direction: column;
-    background: white;
-    top: 140px;
-  
-    gap: 14px;
-    .globo{
-      cursor: pointer;
-    }
-        
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        width: 114%;
+        top: 140px;
+        left: -22px;
+        gap: 14px;
+        /* border: 1px solid red; */
+        padding: 0px 22px;
 
-        h3{
+        gap: 14px;
+        .globo {
+          cursor: pointer;
+        }
+
+        h3 {
           font-size: 1.5rem;
           line-height: 1;
           font-family: Arial, Helvetica, sans-serif;
+          box-shadow: 0 -4px 6px -4px rgba(253, 253, 253, 0.3);
         }
-        p{
+        p {
           font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+          font-family: Arial, Helvetica, sans-serif;
         }
-        img{
+        img {
           width: 26px;
         }
       }
     }
   }
-  
 }
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,7 +193,7 @@ footer{
   width: 100%;
   height: 216px;
 
-  .text-footer{
+  .text-footer {
     color: white;
     display: flex;
 
@@ -206,19 +202,18 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
-img{
-  width: 37px;
-  height: 37px;
-}
+    img {
+      width: 37px;
+      height: 37px;
+    }
   }
-  
 }
-.down{
+.down {
   position: absolute;
   bottom: 214px;
 }
 
-.card-xp{
+.card-xp {
   width: 1024px;
   height: 570px;
   color: white;
@@ -227,9 +222,6 @@ img{
   display: flex;
   align-items: center;
   justify-content: center;
-
-
- 
 }
 
 .toggle-container {
@@ -246,8 +238,6 @@ img{
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   margin: 20px 0;
 }
-
-
 
 .toggle-button.active {
   transform: translateX(100%);
@@ -279,15 +269,15 @@ img{
   opacity: 1;
 }
 
-.toggle{
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 40px;
+.toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-.projects-text{
+.projects-text {
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -297,96 +287,91 @@ margin-top: 40px;
   height: 100%;
   gap: 1rem;
 
-  h2{
+  h2 {
     font-size: 3rem;
-line-height: 1;
-font-family: Arial, Helvetica, sans-serif;
-color: white;
-
-  }
-  P{
+    line-height: 1;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
   }
-
+  P {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
 }
 
-.container-exp{
+.container-exp {
   width: 100%;
   height: 100vh;
-  
+
   margin-top: 106px;
 
-  .texts-xpp{
+  .texts-xpp {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    h2{
+    h2 {
       font-size: 3rem;
-  line-height: 1;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  
-    }
-    P{
+      line-height: 1;
       font-family: Arial, Helvetica, sans-serif;
       color: white;
     }
-  
+    P {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
   }
 
-  .journey{
+  .journey {
     width: 100%;
     height: 100%;
 
     display: flex;
     padding: 30px 0px;
 
-
-    .content-journey{
+    .content-journey {
       width: 100%;
       height: 100%;
-    
+
       display: flex;
       flex-direction: column;
       position: relative;
 
-      &::before{
+      &::before {
         content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 2px;
-    height: 600px;
-    background: linear-gradient(90deg, #fff, #909198, #27272d);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 600px;
+        background: linear-gradient(90deg, #fff, #909198, #27272d);
       }
-      .exp1{
+      .exp1 {
         margin-top: 10px;
         display: flex;
         flex-direction: column;
         align-self: flex-end;
+        width: 692px;
       }
 
-      .texts-exp{
+      .texts-exp {
         display: flex;
-    flex-direction: column;
-    gap: 6px;
-        h2{
+        flex-direction: column;
+        gap: 6px;
+        h2 {
           font-size: 16px;
           line-height: 1;
           font-family: Poppins;
           color: white;
-         
         }
-        .dev{
+        .dev {
           font-size: 22px;
           font-weight: 400;
           line-height: 1;
           color: #909198;
           font-family: Poppins;
         }
-        .date{
+        .date {
           font-size: 16px;
           font-weight: 400;
           line-height: 1;
@@ -394,37 +379,32 @@ color: white;
           font-family: Poppins;
           margin-bottom: 15px;
         }
-
-     
       }
-     
 
       ul {
         list-style: none; /* Remove default bullet points */
         margin-left: 6px;
         font-family: Poppins;
       }
-      
+
       ul li::marker {
-        color: white;      /* Change the color of the bullet points */
-        font-size: 20px;  /* Change the size of the bullet points */
-        content: '•';     /* Optionally, you can change the bullet point symbol */
+        color: white; /* Change the color of the bullet points */
+        font-size: 20px; /* Change the size of the bullet points */
+        content: "•"; /* Optionally, you can change the bullet point symbol */
       }
 
-      li{
+      li {
         color: white;
         font-size: 1.2rem;
         line-height: 30px;
         font-size: 14px;
         font-family: Poppins;
       }
-
-      
     }
   }
 }
 
-.habilities{
+.habilities {
   width: 100%;
   height: 600px;
 
@@ -434,9 +414,8 @@ color: white;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
 
-  .cards-skills{
+  .cards-skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -446,87 +425,86 @@ color: white;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 1px 5px 19px rgb(53 49 49 / 10%);
-    transition: filter .5s ease;
+    transition: filter 0.5s ease;
     background: rgb(112 107 107 / 10%);
-    .cards-container{
+    .cards-container {
       display: flex;
     }
 
-    img{
+    img {
       width: 70px;
     }
-    h3{
+    h3 {
       color: white;
       font-family: Poppins;
       margin-top: 10px;
     }
   }
 }
-.contact{
+.contact {
   width: 100%;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  .card-contact{
+  .card-contact {
     width: 100%;
     height: 100%;
-   
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .text-contact{
+    .text-contact {
       display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
 
-    h2{
-      font-size: 3rem;
-    line-height: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    }
-    p{
-      font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    }
-    }
-  }
-}
-.container-hard{
-  display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    .texts-hard{
-      h2{
+      h2 {
         font-size: 3rem;
         line-height: 1;
         font-family: Arial, Helvetica, sans-serif;
         color: white;
       }
-      p{
+      p {
         font-family: Arial, Helvetica, sans-serif;
         color: white;
       }
     }
+  }
+}
+.container-hard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .texts-hard {
+    h2 {
+      font-size: 3rem;
+      line-height: 1;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+  }
 }
 
-.socials{
- 
+.socials {
   display: flex;
-    flex-direction: column;
-    margin: 20px 0px;
-    text-align: center;
-    .border-s{
-      display: flex;
-      gap: 20px;
-    }
-  .border-social{
+  flex-direction: column;
+  margin: 20px 0px;
+  text-align: center;
+  .border-s {
+    display: flex;
+    gap: 20px;
+  }
+  .border-social {
     margin-top: 10px;
     height: 50px;
     display: flex;
@@ -539,103 +517,87 @@ color: white;
     background: rgba(112, 107, 107, 0.1);
     cursor: pointer;
 
-    img{
+    img {
       width: 30px;
     }
-    p{
+    p {
       font-family: Arial, Helvetica, sans-serif;
-    color: white;
+      color: white;
     }
-   
   }
-  p{
+  p {
     font-family: Arial, Helvetica, sans-serif;
-  color: white;
+    color: white;
   }
 }
 
-@media (max-width: 920px){
-  .card-xp{
+@media (max-width: 920px) {
+  .card-xp {
     width: 94% !important;
   }
-  .skills{
+  .skills {
     width: 139px !important;
     height: 68px !important;
   }
-  .container-skills{
+  .container-skills {
     align-items: center;
     justify-content: center;
   }
-  .container-inner{
+  .container-inner {
     flex-direction: column-reverse !important;
     gap: 0px !important;
   }
-  .welcome{
+  .welcome {
     font-size: 49px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
   }
-  .container-text{
-   
-    p{
+  .container-text {
+    p {
       font-size: 14px !important;
       text-align: center;
     }
   }
 
-
-  .project-cards{
+  .project-cards {
     padding: 0px !important;
   }
 
-  .text-footer{
+  .text-footer {
     padding: 0 46px !important;
   }
 }
 
-
-@media(min-width: 1615px){
- 
-
-  .project-cards{
+@media (min-width: 1615px) {
+  .project-cards {
     padding: 0px 236px !important;
   }
-  .container-exp{
+  .container-exp {
     padding: 0px 236px !important;
   }
-  .habilities{
+  .habilities {
     padding: 0px 236px !important;
   }
-
-
 }
 
-@media(max-width: 376px){
- .container{
-  height: 96% !important;
- }
- .projects-text{
-  h2{
-    font-size: 2rem !important;
+@media (max-width: 376px) {
+  .container {
+    height: 96% !important;
   }
- }
- .itens{
-  padding: 10px !important;
-  h3{
-    font-size: 16px !important;
+  .projects-text {
+    h2 {
+      font-size: 2rem !important;
+    }
   }
- 
- }
-
- .container-skills{
-  gap: 4px !important;
- }
-
+  .itens {
+    padding: 10px !important;
+    h3 {
+      font-size: 16px !important;
+    }
   }
 
-
-
-
-
-
+  .container-skills {
+    gap: 4px !important;
+  }
+}
