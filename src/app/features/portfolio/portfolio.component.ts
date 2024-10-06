@@ -113,19 +113,9 @@ export class PortfolioComponent {
     this.isvisible = !this.isvisible;
   }
 
-  ngAfterViewInit(): void {
-    this.animateText();
-  }
 
-  animateText(): void {
-    anime({
-        targets: ['.welcome', '.intro'],
-        opacity: [0, 1],
-        translateY: [-50, 0],
-        easing: 'easeOutExpo',
-        duration: 2000
-    });
-}
+
+
 
   
 }
