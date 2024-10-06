@@ -1,8 +1,8 @@
 <div class="container">
   <div class="container-inner">
-    <div class="container-text" data-aos="fade-left">
-      <h1 class="welcome" data-aos="fade-left">Bem vindo.</h1>
-      <p class="intro" data-aos="fade-left">
+    <div class="container-text" data-aos="fade-right">
+      <h1 class="welcome" data-aos="fade-right">Bem vindo.</h1>
+      <p class="intro" data-aos="fade-right">
         Meu nome é Genilton, sou desenvolvedor há mais de 2 anos. Tenho
         expertise em integrar requisitos tanto dos usuários quanto do negócio em
         soluções escaláveis, duradouras, seguras e acessíveis em termos de
@@ -14,7 +14,7 @@
 </div>
 <img class="border-path" src="/lado.svg" alt="" />
 
-<div class="projects" *ngIf="isvisible" >
+<div class="projects" *ngIf="isvisible">
   <div class="projects-text" data-aos="fade-up">
     <h2>Meus trabalhos</h2>
     <p>Uma coleção de projetos em que trabalhei.</p>
@@ -27,9 +27,9 @@
     <p>Tenho experiência com diversas tecnologias e ferramentas.</p>
   </div>
 </div>
-  
+
 <div class="project-cards" *ngIf="isvisible">
-  <div class="cards" *ngFor="let item of list"  data-aos="flip-left">
+  <div class="cards" *ngFor="let item of list" data-aos="flip-left">
     <div class="cards-wrap">
       <div class="photo" (click)="openImageModal(item.image)">
         <img [src]="item.image" alt="" />
@@ -39,70 +39,135 @@
           <h3>{{ item.title }}</h3>
           <p>{{ item.description }}</p>
           <a [href]="item.url" target="_blank">
-          <img class="globo" [src]="item.icon" alt="" />
-        </a>
+            <img class="globo" [src]="item.icon" alt="" />
+          </a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-
-
-<div class="container-exp" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+<div
+  class="container-exp"
+  data-aos="fade-left"
+  data-aos-anchor="#example-anchor"
+  data-aos-offset="500"
+  data-aos-duration="500"
+>
   <div class="texts-xpp" data-aos="fade-up">
     <h2>Experiência Profissional</h2>
-    <p>Estou sempre aberto a novos desafios. Vamos trabalhar juntos para criar soluções incríveis para sua empresa!</p>
+    <p>
+      Estou sempre aberto a novos desafios. Vamos trabalhar juntos para criar
+      soluções incríveis para sua empresa!
+    </p>
   </div>
 
   <div class="journey">
-   
     <div class="content-journey">
       <div class="exp exp1" data-aos="fade-left">
-        <div class="texts-exp">  
+        <div class="texts-exp">
           <h2>NDS (Núcleo de Desenvolvimento de Software)</h2>
           <span class="dev">Desenvolvedor Frontend</span>
           <span class="date">dez - 2024 até o momento</span>
         </div>
-        
+
         <ul>
-          <li>Desenvolvimento de novas funcionalidades, correção de bugs e implementações pontuais.</li>
+          <li>
+            Desenvolvimento de novas funcionalidades, correção de bugs e
+            implementações pontuais.
+          </li>
           <li>Participação na implementação de uma arquitetura monolítica.</li>
-          <li>Realização de deploys manuais para garantir atualizações seguras e eficientes em produção.</li>
-          <li>Revisões de código (code reviews), oferecendo feedback construtivo aos colegas de equipe.</li>
-          <li>Orientação de novos membros da equipe técnica, assegurando a excelência do código produzido.</li>
+          <li>
+            Realização de deploys manuais para garantir atualizações seguras e
+            eficientes em produção.
+          </li>
+          <li>
+            Revisões de código (code reviews), oferecendo feedback construtivo
+            aos colegas de equipe.
+          </li>
+          <li>
+            Orientação de novos membros da equipe técnica, assegurando a
+            excelência do código produzido.
+          </li>
         </ul>
       </div>
 
-    <div class="exp" data-aos="fade-right">
-      <div class="texts-exp">  
-        <h2>NDS (Núcleo de Desenvolvimento de Software)</h2>
-        <span class="dev">Desenvolvedor Frontend</span>
-        <span class="date">dez - 2024 ate o momento</span>
+      <div class="exp" data-aos="fade-right">
+        <div class="texts-exp">
+          <h2>NDS (Núcleo de Desenvolvimento de Software)</h2>
+          <span class="dev">Desenvolvedor Frontend</span>
+          <span class="date">dez - 2024 ate o momento</span>
+        </div>
+
+        <ul>
+          <li>
+            Desenvolvimento de novas funcionalidades , correção de bugs e
+            implementações pontuais.
+          </li>
+          <li>Participação na implementação de uma arquitetura monolítica.</li>
+          <li>
+            Realização de deploys manuais para garantir atualizações seguras e
+            eficientes em produção.
+          </li>
+          <li>
+            Revisões de código (code reviews), oferecendo feedback construtivo
+            aos colegas de equipe.
+          </li>
+          <li>
+            Orientação de novos membros da equipe técnica, assegurando a
+            excelência do código produzido.
+          </li>
+        </ul>
       </div>
-      
-     <ul>
-      <li>Desenvolvimento de novas funcionalidades , correção de bugs e implementações pontuais.</li>
-      <li>Participação na implementação de uma arquitetura monolítica.</li>
-      <li>Realização de deploys manuais para garantir atualizações seguras e eficientes em produção.</li>
-      <li>Revisões de código (code reviews), oferecendo feedback construtivo aos colegas de equipe.</li>
-      <li>Orientação de novos membros da equipe técnica, assegurando a excelência do código produzido.</li>
-     </ul>
     </div>
-
-    
-
-    </div>
-
-    
-    
   </div>
 </div>
 
-<div class="habilities">
+<div class="container-hard">
+  <div class="texts-hard" data-aos="fade-up">
+    <h2>Experiência Profissional</h2>
+    <p>
+      Estou sempre aberto a novos desafios. Vamos trabalhar juntos para criar
+      soluções incríveis para sua empresa!
+    </p>
+  </div>
 
+  <div class="habilities" data-aos="fade-up">
+    @for (item of softwareskills; track $index ) {
+    <div class="cards-skills" data-aos="flip-left">
+      <div class="teste" data-aos="flip-left">
+        <img [src]="item.icon" [alt]="item.alt" />
+        <h3>{{ item.name }}</h3>
+      </div>
+    </div>
+    }
+  </div>
 </div>
 
+<div class="contact">
+  <div class="card-contact" data-aos="fade-up">
+    <div class="text-contact" data-aos="fade-up">
+      <h2>Entre em contato!</h2>
+      <p>
+        Se interessou pelos meus serviços? Entre em contato comigo! Juntos
+        criaremos algo extraordinário.
+      </p>
+    </div>
+    <div class="socials" data-aos="fade-up">
+      <p>Entre em contato comigo via:</p>
+      <div class="border-s" data-aos="fade-up">
+        @for (item of contact; track $index) {
+
+        <div class="border-social" (click)="openUrl(item.url)" data-aos="flip-left">
+          <img [src]="item.icon" [alt]="item.url" data-aos="flip-left"/>
+          <p>{{ item.name }}</p>
+        </div>
+
+        }
+      </div>
+    </div>
+  </div>
+</div>
 
 <footer>
   <img class="down" src="/border-down.svg" alt="" />

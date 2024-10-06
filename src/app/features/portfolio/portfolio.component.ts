@@ -22,13 +22,50 @@ export class PortfolioComponent {
   ngOnInit() {
     AOS.init({
       duration: 1200, // Duração da animação em milissegundos
-      once: false // Permite que a animação seja repetida
+      once: false, // Permite que a animação seja repetida
+      mirror: true // Repete a animação ao rolar para cima e para baixo
     });
     window.addEventListener('load', () => {
       AOS.refresh();
     });
   }
 
+  softwareskills = [
+    { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', alt: 'HTML' },
+    { name: 'JAVASCRIPT', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', alt: 'JAVASCRIPT' },
+    { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', alt: 'CSS' },
+    { name: 'SCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg', alt: 'SCSS' },
+    { name: 'ANGULAR', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg', alt: 'ANGULAR' },
+    { name: 'TYPESCRIPT', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', alt: 'TYPESCRIPT' },
+    { name: 'JAVA', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg', alt: 'JAVA' },
+    { name: 'MYSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', alt: 'MYSQL' },
+    { name: 'GITHUB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', alt: 'GITHUB' },
+    { name: 'KANBAN', icon: '/4727480-removebg-preview.png', alt: 'KANBAN' },
+    { name: 'GITLAB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg', alt: 'GITLAB' },
+    { name: 'SCRUM', icon: '/4727480-removebg-preview.png', alt: 'SCRUM' },
+   
+  ];
+
+  contact = [
+    { 
+      name: 'E-mail', 
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg', 
+      alt: 'E-mail', 
+      url: 'mailto:geniltonsilva4002@gmail.com' 
+    },
+    { 
+      name: 'LinkedIn', 
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg', 
+      alt: 'LinkedIn', 
+      url: 'https://www.linkedin.com/jobs/view/3919366782/' 
+    },
+    { 
+      name: 'Whatsapp', 
+      icon: '/10000486-removebg-preview.png', 
+      alt: 'Whatsapp', 
+      url: 'https://wa.me/5585989990129' 
+    }
+  ];
   list = [
     {
       title: 'Projeto Avisos',
@@ -107,6 +144,10 @@ export class PortfolioComponent {
       data: { image },
       panelClass: 'custom-dialog-container'
     });
+  }
+
+  openUrl(url: string): void {
+    window.open(url, '_blank');
   }
 
   toggleVisibility(): void {
