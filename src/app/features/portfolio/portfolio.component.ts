@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ImageModalComponent } from '../../shared/components/image-modal/image-modal.component'; 
 import anime from 'animejs/lib/anime.es.js';
+import * as AOS from 'aos';
 
 
 
@@ -17,6 +18,16 @@ export class PortfolioComponent {
   isvisible = true;  
   
   constructor(public dialog: MatDialog) {}
+
+  ngOnInit() {
+    AOS.init({
+      duration: 1200, // Duração da animação em milissegundos
+      once: false // Permite que a animação seja repetida
+    });
+    window.addEventListener('load', () => {
+      AOS.refresh();
+    });
+  }
 
   list = [
     {

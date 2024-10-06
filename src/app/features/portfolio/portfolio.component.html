@@ -14,8 +14,8 @@
 </div>
 <img class="border-path" src="/lado.svg" alt="" />
 
-<div class="projects" *ngIf="isvisible">
-  <div class="projects-text">
+<div class="projects" *ngIf="isvisible" >
+  <div class="projects-text" data-aos="fade-up">
     <h2>Meus trabalhos</h2>
     <p>Uma coleção de projetos em que trabalhei.</p>
   </div>
@@ -27,52 +27,9 @@
     <p>Tenho experiência com diversas tecnologias e ferramentas.</p>
   </div>
 </div>
-
-<div class="card-xp" *ngIf="!isvisible">
-  <div class="itens">
-    <h3>Tecnologias e Ferramentas</h3>
-
-    <div class="main-skills">
-      <h4>Frontend</h4>
-      <div class="container-skills">
-      <div class="skills" *ngFor="let skill of skills">
-        <div class="back-img" [ngStyle]="{'--bg-color': skill.color}">
-          <img class="icons" [src]="skill.icon" />
-        </div>
-        <p>{{ skill.name }}</p>
-      </div>
-    </div>
-
-    </div>
-    <div class="main-skills devops">
-      <h4>Devops</h4>
-      <div class="container-skills">
-      <div class="skills" *ngFor="let skill of devops">
-        <div class="back-img" [ngStyle]="{'--bg-color': skill.color}">
-          <img class="icons" [src]="skill.icon" />
-        </div>
-        <p>{{ skill.name }}</p>
-      </div>
-    </div>
-
-    </div>
-    <div class="main-skills testes">
-      <h4>Testes</h4>
-      <div class="container-skills">
-      <div class="skills" *ngFor="let skill of teste">
-        <div class="back-img" [ngStyle]="{'--bg-color': skill.color}">
-          <img class="icons" [src]="skill.icon" />
-        </div>
-        <p>{{ skill.name }}</p>
-      </div>
-    </div>
-
-    </div>
-
-  </div>
-</div>
+  
 <div class="project-cards" *ngIf="isvisible">
-  <div class="cards" *ngFor="let item of list">
+  <div class="cards" *ngFor="let item of list"  data-aos="flip-left">
     <div class="cards-wrap">
       <div class="photo" (click)="openImageModal(item.image)">
         <img [src]="item.image" alt="" />
@@ -89,17 +46,63 @@
     </div>
   </div>
 </div>
-<div class="toggle">
-  <div class="toggle-container" (click)="toggleVisibility()">
-    <div class="toggle-button" [class.active]="!isvisible"></div>
-    <span class="toggle-text left" [class.active]="isvisible"
-      >Experiências</span
-    >
-    <span class="toggle-text right" [class.active]="!isvisible"
-      >Software Skills</span
-    >
+
+
+
+<div class="container-exp" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+  <div class="texts-xpp" data-aos="fade-up">
+    <h2>Experiência Profissional</h2>
+    <p>Estou sempre aberto a novos desafios. Vamos trabalhar juntos para criar soluções incríveis para sua empresa!</p>
+  </div>
+
+  <div class="journey">
+   
+    <div class="content-journey">
+      <div class="exp exp1" data-aos="fade-left">
+        <div class="texts-exp">  
+          <h2>NDS (Núcleo de Desenvolvimento de Software)</h2>
+          <span class="dev">Desenvolvedor Frontend</span>
+          <span class="date">dez - 2024 até o momento</span>
+        </div>
+        
+        <ul>
+          <li>Desenvolvimento de novas funcionalidades, correção de bugs e implementações pontuais.</li>
+          <li>Participação na implementação de uma arquitetura monolítica.</li>
+          <li>Realização de deploys manuais para garantir atualizações seguras e eficientes em produção.</li>
+          <li>Revisões de código (code reviews), oferecendo feedback construtivo aos colegas de equipe.</li>
+          <li>Orientação de novos membros da equipe técnica, assegurando a excelência do código produzido.</li>
+        </ul>
+      </div>
+
+    <div class="exp" data-aos="fade-right">
+      <div class="texts-exp">  
+        <h2>NDS (Núcleo de Desenvolvimento de Software)</h2>
+        <span class="dev">Desenvolvedor Frontend</span>
+        <span class="date">dez - 2024 ate o momento</span>
+      </div>
+      
+     <ul>
+      <li>Desenvolvimento de novas funcionalidades , correção de bugs e implementações pontuais.</li>
+      <li>Participação na implementação de uma arquitetura monolítica.</li>
+      <li>Realização de deploys manuais para garantir atualizações seguras e eficientes em produção.</li>
+      <li>Revisões de código (code reviews), oferecendo feedback construtivo aos colegas de equipe.</li>
+      <li>Orientação de novos membros da equipe técnica, assegurando a excelência do código produzido.</li>
+     </ul>
+    </div>
+
+    
+
+    </div>
+
+    
+    
   </div>
 </div>
+
+<div class="habilities">
+
+</div>
+
 
 <footer>
   <img class="down" src="/border-down.svg" alt="" />

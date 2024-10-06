@@ -96,12 +96,12 @@
         font-size: 3rem;
     line-height: 1;
     font-family: Arial, Helvetica, sans-serif;
-    color: #0a001b;
+    color: white;
     
       }
       P{
         font-family: Arial, Helvetica, sans-serif;
-        color: #0a001b;
+        color: white;
       }
 
     }
@@ -111,7 +111,6 @@
 .project-cards{
   width: 100%;
     height: auto;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,9 +125,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 22px;
-    -webkit-box-shadow: 0px 8px 31px -7px rgb(19 1 49);
-    -moz-box-shadow: 0px 8px 31px -7px rgb(19 1 49);
-    box-shadow: 0px 8px 31px -7px rgb(19 1 49);
+    background: white;
+
   }
   .cards-wrap{
     width: 326px;
@@ -165,7 +163,7 @@ img{
     flex-direction: column;
     background: white;
     top: 140px;
-    box-shadow: 0 0 4rem 4rem #fafeff;
+  
     gap: 14px;
     .globo{
       cursor: pointer;
@@ -223,7 +221,7 @@ img{
 .card-xp{
   width: 1024px;
   height: 570px;
-  border: 1px solid #0a001b;
+  color: white;
   margin: 0 auto;
   border-radius: 22px;
   display: flex;
@@ -231,82 +229,7 @@ img{
   justify-content: center;
 
 
-  .itens{
-    width: 96%;
-    height: 86%;
-    max-height: 86%;
-    border: 1px solid;
-    padding: 22px;
-    overflow: auto;
-
-    h3{
-      font-size: 24px;
-      line-height: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0a001b;
-    }
-
-    .main-skills{
-
-      h4{
-        font-size: 20px;
-        line-height: 1;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #0a001b;
-      margin: 28px 0px 10px 10px;
-      }
-      .skills{
-        width: 165px;
-        height: 68px;
-        background-color:#F5F8FA;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 0 10px;
-        border-radius: 20px;
-
-   
-      
-        .back-img {
-          position: relative;
-          width: 42px;
-          height: 42px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          overflow: hidden;
-        
-          &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: var(--bg-color, #33A9DC); 
-            opacity: 0.2; 
-            z-index: 1;
-            border-radius: 10px;
-          }
-        
-          .icons {
-            display: flex;
-            height: 28px;
-            position: relative;
-            z-index: 2;
-            opacity: 1 !important;
-          }
-        }
-       
-      }
-
-      .container-skills{
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-    }
-  }
+ 
 }
 
 .toggle-container {
@@ -324,13 +247,7 @@ img{
   margin: 20px 0;
 }
 
-.toggle-button {
-  width: 50%;
-  height: 100%;
-  background-color: #0a001b;
-  border-radius: 25px;
-  transition: transform 0.3s ease;
-}
+
 
 .toggle-button.active {
   transform: translateX(100%);
@@ -370,6 +287,143 @@ justify-content: center;
 margin-top: 40px;
 }
 
+.projects-text{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+
+  h2{
+    font-size: 3rem;
+line-height: 1;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+
+  }
+  P{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+
+}
+
+.container-exp{
+  width: 100%;
+  height: 100vh;
+  
+  margin-top: 106px;
+
+  .texts-xpp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+      font-size: 3rem;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  
+    }
+    P{
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+  
+  }
+
+  .journey{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    padding: 30px 0px;
+
+
+    .content-journey{
+      width: 100%;
+      height: 100%;
+    
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      &::before{
+        content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 600px;
+    background: linear-gradient(90deg, #fff, #909198, #27272d);
+      }
+      .exp1{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+      }
+
+      .texts-exp{
+        display: flex;
+    flex-direction: column;
+    gap: 6px;
+        h2{
+          font-size: 16px;
+          line-height: 1;
+          font-family: Poppins;
+          color: white;
+         
+        }
+        .dev{
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 1;
+          color: #909198;
+          font-family: Poppins;
+        }
+        .date{
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1;
+          color: white;
+          font-family: Poppins;
+          margin-bottom: 15px;
+        }
+
+     
+      }
+     
+
+      ul {
+        list-style: none; /* Remove default bullet points */
+        margin-left: 6px;
+        font-family: Poppins;
+      }
+      
+      ul li::marker {
+        color: white;      /* Change the color of the bullet points */
+        font-size: 20px;  /* Change the size of the bullet points */
+        content: '•';     /* Optionally, you can change the bullet point symbol */
+      }
+
+      li{
+        color: white;
+        font-size: 1.2rem;
+        line-height: 30px;
+        font-size: 14px;
+        font-family: Poppins;
+      }
+
+      
+    }
+  }
+}
+
 @media (max-width: 920px){
   .card-xp{
     width: 94% !important;
@@ -399,11 +453,7 @@ margin-top: 40px;
       text-align: center;
     }
   }
-  .projects-text{
-    p{
-    text-align: center;
-    }
-  }
+
 
   .project-cards{
     padding: 0px !important;
@@ -418,6 +468,9 @@ margin-top: 40px;
  
 
   .project-cards{
+    padding: 0px 236px !important;
+  }
+  .container-exp{
     padding: 0px 236px !important;
   }
 
