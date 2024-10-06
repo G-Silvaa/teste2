@@ -203,10 +203,13 @@ footer {
     align-items: center;
     padding: 0 100px;
     img {
+      cursor: pointer;
       width: 37px;
       height: 37px;
     }
   }
+
+ 
 }
 .down {
   position: absolute;
@@ -343,7 +346,7 @@ footer {
         top: 0;
         left: 50%;
         width: 2px;
-        height: 600px;
+        height: 744px;
         background: linear-gradient(90deg, #fff, #909198, #27272d);
       }
       .exp1 {
@@ -529,6 +532,22 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
   }
+}
+
+.links-nav{
+  display: flex;
+  flex-direction: column;
+ 
+  a{
+    color: white;
+    text-decoration: none;
+    font-family: Poppins;
+  }
+  
+}
+
+.copy{
+  margin-right: 80px;
 }
 
 @media (max-width: 920px) {
