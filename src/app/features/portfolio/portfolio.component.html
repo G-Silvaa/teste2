@@ -1,8 +1,8 @@
 <div class="container" id="home">
   <div class="container-inner">
     <div class="container-text" data-aos="fade-right">
-      <h1 class="welcome" >Bem vindo.</h1>
-      <p class="intro" >
+      <h1 class="welcome">Bem vindo.</h1>
+      <p class="intro">
         Meu nome é Genilton, sou desenvolvedor há mais de 2 anos. Tenho
         expertise em integrar requisitos tanto dos usuários quanto do negócio em
         soluções escaláveis, duradouras, seguras e acessíveis em termos de
@@ -74,15 +74,20 @@
 
         <ul>
           <li>
-            Implementação e manutenção de infraestruturas de rede, incluindo configuração de cabeamento, verificação de sinal de internet e manutenção de
-            servidores utilizando sistemas operacionais como Ubuntu para garantir conectividade estável.
-            
+            Implementação e manutenção de infraestruturas de rede, incluindo
+            configuração de cabeamento, verificação de sinal de internet e
+            manutenção de servidores utilizando sistemas operacionais como
+            Ubuntu para garantir conectividade estável.
           </li>
-          <li>Administração de firewalls como pfSense para proteger redes contra ameaças externas e internas</li>
           <li>
-             Utilização de softwares de monitoramento de rede e Site Survey para acompanhar o desempenho e identificar áreas com internet fraca no campus,
-recomendando a implementação de novos pontos de acesso (APs).
-
+            Administração de firewalls como pfSense para proteger redes contra
+            ameaças externas e internas
+          </li>
+          <li>
+            Utilização de softwares de monitoramento de rede e Site Survey para
+            acompanhar o desempenho e identificar áreas com internet fraca no
+            campus, recomendando a implementação de novos pontos de acesso
+            (APs).
           </li>
           <li>
             Revisões de código (code reviews), oferecendo feedback construtivo
@@ -161,8 +166,12 @@ recomendando a implementação de novos pontos de acesso (APs).
       <div class="border-s" data-aos="fade-up">
         @for (item of contact; track $index) {
 
-        <div class="border-social" (click)="openUrl(item.url)" data-aos="flip-left">
-          <img [src]="item.icon" [alt]="item.url" data-aos="flip-left"/>
+        <div
+          class="border-social"
+          (click)="openUrl(item.url)"
+          data-aos="flip-left"
+        >
+          <img [src]="item.icon" [alt]="item.url" data-aos="flip-left" />
           <p>{{ item.name }}</p>
         </div>
 
@@ -177,14 +186,22 @@ recomendando a implementação de novos pontos de acesso (APs).
   <div class="text-footer">
     <div class="links-nav" data-aos="fade-down">
       <a href="#home" (click)="scrollToSection($event, 'home')">Home</a>
-      <a href="#projects" (click)="scrollToSection($event, 'projects')">Projetos</a>
-      <a href="#experience" (click)="scrollToSection($event, 'experience')">Experiência</a>
-      <a href="#skills" (click)="scrollToSection($event, 'skills')">Habilidades</a>
-      <a href="#contact" (click)="scrollToSection($event, 'contact')">Contato</a>
+      <a href="#projects" (click)="scrollToSection($event, 'projects')"
+        >Projetos</a
+      >
+      <a href="#experience" (click)="scrollToSection($event, 'experience')"
+        >Experiência</a
+      >
+      <a href="#skills" (click)="scrollToSection($event, 'skills')"
+        >Habilidades</a
+      >
+      <a href="#contact" (click)="scrollToSection($event, 'contact')"
+        >Contato</a
+      >
     </div>
     <h3 class="copy" data-aos="fade-down">© GeniltonSilva</h3>
     <a data-aos="fade-down" href="https://github.com/G-Silvaa" target="_blank">
-    <img src="/github.svg" alt="" />
-  </a>
+      <img src="/github.svg" alt="" />
+    </a>
   </div>
 </footer>

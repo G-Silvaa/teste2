@@ -550,6 +550,11 @@ footer {
   margin-right: 80px;
 }
 
+.container-exp {
+  width: 100% !important;
+    height: 1030px !important;
+}
+
 @media (max-width: 920px) {
   .card-xp {
     width: 94% !important;
@@ -587,6 +592,13 @@ footer {
     padding: 0 46px !important;
   }
 }
+.exp{
+width: 45%;
+}
+.exp1{
+  width: 45% !important;
+}
+
 
 @media (min-width: 1615px) {
   .project-cards {
@@ -598,7 +610,17 @@ footer {
   .habilities {
     padding: 0px 236px !important;
   }
+  .texts-hard{
+    margin-top: 10vh !important;
+  }
 }
+
+
+@media (max-width: 1615px) {
+
+
+}
+
 
 @media (max-width: 376px) {
   .container {
@@ -618,5 +640,11 @@ footer {
 
   .container-skills {
     gap: 4px !important;
+  }
+}
+@media (max-width: 1215px) {
+
+  .texts-hard{
+    margin-top: 36% !important;
   }
 }

@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ImageModalComponent } from '../../shared/components/image-modal/image-modal.component'; 
-import anime from 'animejs/lib/anime.es.js';
-import * as AOS from 'aos';
 import { softwareskills, contact, list } from './data/data';
-
-
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-portfolio',
@@ -51,8 +48,6 @@ export class PortfolioComponent {
     this.isvisible = !this.isvisible;
   }
 
-
-
   scrollToSection(event: Event, sectionId: string): void {
     event.preventDefault();
     const element = document.getElementById(sectionId);
@@ -61,6 +56,4 @@ export class PortfolioComponent {
     }
   }
 
-
-  
 }
