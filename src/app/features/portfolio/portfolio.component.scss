@@ -560,43 +560,7 @@ footer {
   align-items: center;
 }
 
-@media (max-width: 920px) {
-  .card-xp {
-    width: 94% !important;
-  }
-  .skills {
-    width: 139px !important;
-    height: 68px !important;
-  }
-  .container-skills {
-    align-items: center;
-    justify-content: center;
-  }
-  .container-inner {
-    flex-direction: column-reverse !important;
-    gap: 0px !important;
-  }
-  .welcome {
-    font-size: 49px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .container-text {
-    p {
-      font-size: 14px !important;
-      text-align: center;
-    }
-  }
 
-  .project-cards {
-    padding: 0px !important;
-  }
-
-  .text-footer {
-    padding: 0 46px !important;
-  }
-}
 .exp{
 width: 45%;
 }
@@ -649,5 +613,50 @@ width: 45%;
 
   .journey{
     width: 85% !important;
+  }
+}
+
+@media (max-width: 1300px) {
+ .welcome{
+  font-size: 70px !important;
+ }
+
+ }
+
+ @media (max-width: 1000px) {
+  .card-xp {
+    width: 94% !important;
+  }
+  .skills {
+    width: 139px !important;
+    height: 68px !important;
+  }
+  .container-skills {
+    align-items: center;
+    justify-content: center;
+  }
+  .container-inner {
+    flex-direction: column-reverse !important;
+    gap: 0px !important;
+  }
+  .welcome {
+    font-size: 49px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .container-text {
+    p {
+      font-size: 14px !important;
+      text-align: center;
+    }
+  }
+
+  .project-cards {
+    padding: 0px !important;
+  }
+
+  .text-footer {
+    padding: 0 46px !important;
   }
 }
